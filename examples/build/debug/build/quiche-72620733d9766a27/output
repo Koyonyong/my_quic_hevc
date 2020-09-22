@@ -1,0 +1,31 @@
+running: "cmake" "/home/koyong/QUIC/quic_hevc/deps/boringssl" "-DCMAKE_INSTALL_PREFIX=/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Debug"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build
+running: "cmake" "--build" "." "--target" "bssl" "--config" "Debug" "--"
+make[1]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[2]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[3]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[4]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[4]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+[  0%] Built target global_target
+make[4]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[4]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+[  9%] Built target fipsmodule
+make[4]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[4]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+[ 83%] Built target crypto
+make[4]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[4]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+[ 94%] Built target ssl
+make[4]: Entering directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[4]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+[100%] Built target bssl
+make[3]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[2]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+make[1]: Leaving directory '/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build'
+cargo:root=/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out
+cargo:rustc-link-search=native=/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build/crypto
+cargo:rustc-link-lib=static=crypto
+cargo:rustc-link-search=native=/home/koyong/QUIC/quic_hevc/examples/build/debug/build/quiche-72620733d9766a27/out/build/ssl
+cargo:rustc-link-lib=static=ssl
